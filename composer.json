@@ -1,0 +1,15 @@
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/helpers/view.php",
+            "app/helpers/auth.php",
+            "app/helpers/security.php"
+        ]
+    },
+    "require": {
+        "phpoffice/phpspreadsheet": "^5.7"
+    }
+}

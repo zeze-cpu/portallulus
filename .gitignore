@@ -1,0 +1,33 @@
+# Dependencies
+/vendor/
+
+# Environment
+.env
+
+# Uploads (user-generated content)
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# Temporary/debug scripts
+add_no_surat.php
+cek_mapel.php
+cek_nilai.php
+cek_schema.php
+debug_import.php
+fix_db.php
+fix_mapel.php
+rename_mapel.php
+update_db.php
+migrate.php
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+Thumbs.db
+.DS_Store
+
+# Scratch
+/scratch/
