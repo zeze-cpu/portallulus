@@ -288,7 +288,7 @@
                 </select>
                 <i class='bx bx-chevron-down' style="position:absolute; right:16px; top:50%; transform:translateY(-50%); color:#94a3b8; font-size:22px; z-index:2; pointer-events:none;"></i>
               </div>
-              <p class="form-hint" style="margin-top:8px;"><i class='bx bx-info-circle'></i> Diperbarui otomatis saat "Proses Kelulusan" dijalankan</p>
+              <p class="form-hint" style="margin-top:8px;"><i class='bx bx-info-circle'></i> Status ini akan diperbarui otomatis saat Anda menjalankan Proses Kelulusan.</p>
             </div>
           </div>
         </div>

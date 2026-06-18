@@ -3,7 +3,7 @@
     <h1 class="page-title">Beranda</h1>
   </div>
   <form action="<?= url('/admin/proses-kelulusan') ?>" method="POST"
-    onsubmit="confirmAction(event, 'Sistem akan menghitung ulang status kelulusan semua siswa berdasarkan nilai vs KKM.\\n\\nLanjutkan proses ini?')">
+    onsubmit="confirmAction(event, 'Hitung ulang kelulusan semua siswa berdasarkan nilai dan KKM? Tindakan ini akan mengubah status kelulusan yang sudah ada.')">
     <?= csrf_field() ?>
     <button type="submit" class="btn btn-primary" style="background: linear-gradient(135deg, #f59e0b, #d97706); box-shadow: 0 4px 12px rgba(245,158,11,0.3);">
       <i class='bx bx-analyse'></i> Proses Kelulusan
@@ -14,14 +14,14 @@
 <!-- Stat Cards -->
 <div class="dashboard-cards" style="margin-bottom: 32px;">
   <a href="<?= url('/admin/siswa') ?>" class="stat-card blue">
-    <div class="stat-label">Total Siswa</div>
+    <div class="stat-label">Siswa Terdaftar</div>
     <div class="stat-value"><?= number_format($stats['total'] ?? 0) ?></div>
-    <div class="stat-sub">Siswa terdaftar aktif</div>
+    <div class="stat-sub">Total siswa aktif</div>
     <i class='bx bxs-group' style="position:absolute; right:18px; bottom:14px; font-size:52px; opacity:0.18;"></i>
   </a>
 
   <a href="<?= url('/admin/siswa?status=lulus') ?>" class="stat-card green">
-    <div class="stat-label">Dinyatakan Lulus</div>
+    <div class="stat-label">Lulus</div>
     <div class="stat-value"><?= number_format($stats['lulus'] ?? 0) ?></div>
     <div class="stat-sub">
       <?php if (($stats['total'] ?? 0) > 0): ?>
@@ -34,7 +34,7 @@
   </a>
 
   <a href="<?= url('/admin/siswa?status=tidak_lulus') ?>" class="stat-card red">
-    <div class="stat-label">Tidak Lulus</div>
+    <div class="stat-label">Tidak lulus</div>
     <div class="stat-value"><?= number_format($stats['tidak_lulus'] ?? 0) ?></div>
     <div class="stat-sub">
       <?php if (($stats['total'] ?? 0) > 0): ?>
@@ -47,7 +47,7 @@
   </a>
 
   <a href="<?= url('/admin/siswa?status=belum') ?>" class="stat-card orange">
-    <div class="stat-label">Belum Diproses</div>
+    <div class="stat-label">Belum diproses</div>
     <div class="stat-value"><?= number_format($stats['belum'] ?? 0) ?></div>
     <div class="stat-sub">Menunggu penentuan status</div>
     <i class='bx bxs-time' style="position:absolute; right:18px; bottom:14px; font-size:52px; opacity:0.18;"></i>
@@ -64,17 +64,17 @@
       <?= e($_SESSION['user']['nama'] ?? $_SESSION['user']['username'] ?? 'Admin') ?> 👋
     </h2>
     <p style="opacity: 0.85; margin-bottom: 28px; max-width: 560px; font-size: 14px; line-height: 1.6;">
-      Gunakan panel ini untuk mengelola data siswa, menginput nilai, dan mengatur pengumuman kelulusan. Pastikan semua data sudah lengkap sebelum memproses kelulusan.
+      Kelola data siswa, input nilai, dan atur pengumuman kelulusan. Pastikan semua data nilai dan KKM telah lengkap sebelum memproses kelulusan.
     </p>
     <div style="display: flex; gap: 12px; flex-wrap: wrap;">
       <a href="<?= url('/admin/siswa') ?>" class="btn-banner">
-        <i class='bx bxs-group'></i> Kelola Data Siswa
+        <i class='bx bxs-group'></i> Kelola Siswa
       </a>
       <a href="<?= url('/admin/nilai') ?>" class="btn-banner-outline">
         <i class='bx bxs-bar-chart-alt-2'></i> Input Nilai
       </a>
       <a href="<?= url('/admin/skl') ?>" class="btn-banner-outline">
-        <i class='bx bxs-cog'></i> Pengaturan SKL
+        <i class='bx bxs-cog'></i> Atur SKL
       </a>
     </div>
   </div>

@@ -13,7 +13,7 @@
     <?php endif; ?>
 
     <div class="form-group">
-      <label class="form-label">Kata Sandi Saat Ini <span style="color:var(--danger)">*</span></label>
+      <label class="form-label">Kata sandi saat ini <span style="color:var(--danger)">*</span></label>
       <div style="position:relative;">
         <input type="password" name="old_password" class="form-control" placeholder="Masukkan kata sandi lama" required style="padding-right:40px;">
         <i class='bx bx-lock-alt' style="position:absolute; right:12px; top:50%; transform:translateY(-50%); color:var(--text-light); font-size:18px;"></i>
@@ -21,7 +21,7 @@
     </div>
 
     <div class="form-group">
-      <label class="form-label">Kata Sandi Baru <span style="color:var(--danger)">*</span></label>
+      <label class="form-label">Kata sandi baru <span style="color:var(--danger)">*</span></label>
       <div style="position:relative;">
         <input type="password" name="new_password" class="form-control" placeholder="Minimal 8 karakter" required style="padding-right:40px;">
         <i class='bx bx-key' style="position:absolute; right:12px; top:50%; transform:translateY(-50%); color:var(--text-light); font-size:18px;"></i>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="form-group" style="margin-bottom:32px;">
-      <label class="form-label">Konfirmasi Kata Sandi Baru <span style="color:var(--danger)">*</span></label>
+      <label class="form-label">Konfirmasi kata sandi baru <span style="color:var(--danger)">*</span></label>
       <div style="position:relative;">
         <input type="password" name="repeat_password" class="form-control" placeholder="Ketik ulang kata sandi baru" required style="padding-right:40px;">
         <i class='bx bx-shield-check' style="position:absolute; right:12px; top:50%; transform:translateY(-50%); color:var(--text-light); font-size:18px;"></i>

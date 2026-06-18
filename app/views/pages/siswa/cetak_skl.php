@@ -110,7 +110,7 @@
     </table>
 
     <div style="text-align: justify; font-size: 12px; margin-bottom: 15px;">
-      <p>Surat keterangan Lulus ini bersifat sementara sampai diterbitkan Ijazah dan Transkrip Nilai peserta didik.</p>
+      <p>Surat keterangan lulus ini bersifat sementara sampai ijazah dan transkrip nilai resmi diterbitkan.</p>
     </div>
 
     <!-- Tanda Tangan -->

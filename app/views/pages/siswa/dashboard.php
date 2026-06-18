@@ -10,7 +10,7 @@
   <?php if (!$isOpen): ?>
     <!-- Countdown Timer -->
     <div id="countdown-container" style="text-align: center; padding: 40px 0;">
-      <h2 style="margin-bottom: 32px; font-size: 18px; color: #64748b; font-weight: 600;">Pengumuman akan dibuka dalam:</h2>
+      <h2 style="margin-bottom: 32px; font-size: 18px; color: #64748b; font-weight: 600;">Pengumuman kelulusan akan dibuka dalam:</h2>
       
       <div id="timer" style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
         <div style="background: #ffffff; border: 1px solid #e2e8f0; padding: 24px; border-radius: 24px; min-width: 110px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(0,0,0,0.08);">
@@ -153,13 +153,13 @@
             <div class="confetti-3" style="font-size: 36px; z-index: 1;">🎉</div>
             <div class="anim-grad" style="font-size: 84px; z-index: 3;">🎓</div>
           </div>
-          <h2 style="font-size: 42px; font-weight: 900; margin-bottom: 12px; letter-spacing: -0.02em; background: linear-gradient(135deg, #166534, #15803d); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">SELAMAT!</h2>
+          <h2 style="font-size: 42px; font-weight: 900; margin-bottom: 12px; letter-spacing: -0.02em; background: linear-gradient(135deg, #166534, #15803d); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Selamat!</h2>
           <p style="font-size: 20px; margin-bottom: 8px; color: #166534; font-weight: 500;">Anda dinyatakan <strong style="font-size: 22px; color: #15803d; background: rgba(22, 163, 74, 0.1); padding: 4px 12px; border-radius: 8px;">LULUS</strong> dari <?= e($skl['nama_sekolah'] ?? 'Sekolah') ?>.</p>
           <p style="font-size: 16px; opacity: 0.7; max-width: 500px; margin: 0 auto;">Teruslah melangkah ke jenjang berikutnya dengan penuh semangat dan ukir prestasi yang lebih tinggi.</p>
           
           <div style="margin-top: 40px; display: flex; justify-content: center;">
             <a href="<?= url('/siswa/cetak-skl') ?>" style="background: linear-gradient(135deg, #16a34a, #15803d); color: white; padding: 18px 40px; border-radius: 100px; font-weight: 800; text-decoration: none; display: inline-flex; align-items: center; gap: 12px; font-size: 16px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 10px 25px rgba(22, 163, 74, 0.3), inset 0 2px 4px rgba(255,255,255,0.2);" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 15px 35px rgba(22, 163, 74, 0.4), inset 0 2px 4px rgba(255,255,255,0.2)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 25px rgba(22, 163, 74, 0.3), inset 0 2px 4px rgba(255,255,255,0.2)';">
-              <i class='bx bx-printer' style="font-size: 20px;"></i> Cetak SKL Mandiri
+              <i class='bx bx-printer' style="font-size: 20px;"></i> Unduh SKL
             </a>
           </div>
         </div>
@@ -171,7 +171,7 @@
           <div style="font-size: 84px; margin-bottom: 24px; color: #b91c1c; filter: drop-shadow(0 8px 16px rgba(185, 28, 28, 0.2));">
             <i class='bx bx-info-circle anim-tidak-lulus'></i>
           </div>
-          <h2 style="font-size: 42px; font-weight: 900; margin-bottom: 12px; letter-spacing: -0.02em; background: linear-gradient(135deg, #991b1b, #b91c1c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">MOHON MAAF</h2>
+          <h2 style="font-size: 42px; font-weight: 900; margin-bottom: 12px; letter-spacing: -0.02em; background: linear-gradient(135deg, #991b1b, #b91c1c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Mohon Maaf</h2>
           <p style="font-size: 20px; margin-bottom: 8px; font-weight: 500;">Anda dinyatakan <strong style="font-size: 22px; color: #b91c1c; background: rgba(220, 38, 38, 0.1); padding: 4px 12px; border-radius: 8px;">TIDAK LULUS</strong> dari <?= e($skl['nama_sekolah'] ?? 'Sekolah') ?>.</p>
           <p style="font-size: 16px; opacity: 0.7; max-width: 500px; margin: 0 auto;">Jangan menyerah, tetap semangat dan jadikan ini sebagai awal baru untuk mencoba kembali dengan lebih baik.</p>
         </div>
@@ -183,9 +183,9 @@
           <div style="font-size: 84px; margin-bottom: 24px; color: #b45309; filter: drop-shadow(0 8px 16px rgba(180, 83, 9, 0.2));">
             <i class='bx bx-time-five anim-belum'></i>
           </div>
-          <h2 style="font-size: 42px; font-weight: 900; margin-bottom: 12px; letter-spacing: -0.02em; background: linear-gradient(135deg, #92400e, #b45309); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">BELUM TERSEDIA</h2>
-          <p style="font-size: 20px; margin-bottom: 8px; font-weight: 500;">Status kelulusan Anda belum ditentukan.</p>
-          <p style="font-size: 16px; opacity: 0.7; max-width: 500px; margin: 0 auto;">Silakan hubungi bagian administrasi sekolah untuk informasi lebih lanjut mengenai pengumuman kelulusan Anda.</p>
+          <h2 style="font-size: 42px; font-weight: 900; margin-bottom: 12px; letter-spacing: -0.02em; background: linear-gradient(135deg, #92400e, #b45309); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Pengumuman Belum Tersedia</h2>
+          <p style="font-size: 20px; margin-bottom: 8px; font-weight: 500;">Status kelulusan belum ditentukan.</p>
+          <p style="font-size: 16px; opacity: 0.7; max-width: 500px; margin: 0 auto;">Hubungi tata usaha sekolah untuk informasi lebih lanjut.</p>
         </div>
       <?php endif; ?>
     </div>
@@ -255,8 +255,8 @@
     <?php elseif ($isOpen): ?>
     <div style="text-align: center; padding: 32px; background: #f8fafc; border-radius: 16px; border: 1px dashed #cbd5e1; margin-bottom: 32px;">
       <i class='bx bx-book-open' style="font-size: 48px; color: #cbd5e1; display: block; margin-bottom: 12px;"></i>
-      <p style="color: #64748b; font-weight: 500;">Belum ada data nilai yang diinput untuk Anda.</p>
-      <p style="color: #94a3b8; font-size: 13px;">Silakan hubungi bagian administrasi sekolah.</p>
+      <p style="color: #64748b; font-weight: 500;">Belum ada data nilai.</p>
+      <p style="color: #94a3b8; font-size: 13px;">Hubungi tata usaha sekolah jika nilai Anda belum tersedia.</p>
     </div>
     <?php endif; ?>
 
@@ -267,7 +267,7 @@
     <form action="<?= url('/logout') ?>" method="POST" style="display: inline-block;">
       <?= csrf_field() ?>
       <button type="submit" style="background: white; color: #dc2626; border: 2px solid #fee2e2; padding: 12px 32px; border-radius: 14px; font-size: 15px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 6px rgba(220,38,38,0.1); transition: all 0.2s;">
-        <i class='bx bx-log-out-circle' style="font-size: 20px;"></i> Keluar dari Portal
+        <i class='bx bx-log-out-circle' style="font-size: 20px;"></i> Keluar
       </button>
     </form>
   </div>

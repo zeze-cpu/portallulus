@@ -3,8 +3,8 @@
     <div class="auth-logo">
       <i class='bx bxs-graduation'></i>
     </div>
-    <h1 class="auth-title">Cek Kelulusan</h1>
-    <p class="auth-subtitle">Masukkan data diri untuk melihat hasil kelulusan</p>
+    <h1 class="auth-title">Cek Hasil Kelulusan</h1>
+    <p class="auth-subtitle">Masukkan NISN untuk melihat hasil kelulusan Anda</p>
   </div>
 
   <?php if (!empty($error)): ?>
@@ -23,11 +23,11 @@
       </div>
       <p style="font-size: 12px; color: #94a3b8; margin-top: 6px; font-weight: 500;">
         <i class='bx bx-info-circle' style="vertical-align: middle;"></i>
-        Masukkan NISN Anda untuk melihat kelulusan
+        Pastikan NISN berjumlah 10 digit angka
       </p>
     </div>
     <button type="submit" class="btn-login">
-      <i class='bx bx-search-alt-2'></i> Lihat Hasil Kelulusan
+      <i class='bx bx-search-alt-2'></i> Cek Kelulusan Sekarang
     </button>
   </form>
 

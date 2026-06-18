@@ -10,7 +10,7 @@
       <div style="position:relative; width: 100%; max-width: 320px;">
         <i class='bx bx-search' style="position:absolute; left:16px; top:50%; transform:translateY(-50%); color:#94a3b8; font-size:18px;"></i>
         <input type="search" id="nilai-search" class="form-control" style="padding-left:44px; border-radius: 12px; height: 44px; font-size: 14px; background: #f8fafc; border: 1px solid transparent; transition: all 0.3s ease; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);"
-          placeholder="Ketik nama atau NISN siswa..." value="<?= e($search) ?>"
+          placeholder="Cari nama atau NISN siswa..." value="<?= e($search) ?>"
           autocomplete="off" spellcheck="false"
           onfocus="this.style.background='#fff'; this.style.borderColor='#818cf8'; this.style.boxShadow='0 0 0 4px rgba(99, 102, 241, 0.1)'"
           onblur="this.style.background='#f8fafc'; this.style.borderColor='transparent'; this.style.boxShadow='inset 0 2px 4px rgba(0,0,0,0.02)'">
@@ -114,7 +114,7 @@
         <td colspan="4">
           <div class="empty-state">
             <i class='bx bx-search-alt'></i>
-            <p>Tidak ada data siswa yang cocok.</p>
+            <p>Tidak ada siswa yang cocok dengan pencarian.</p>
             <small>Coba ketik huruf atau angka awal nama / NISN.</small>
           </div>
         </td>
@@ -124,7 +124,7 @@
           <td colspan="4">
             <div class="empty-state">
               <i class='bx bxs-bar-chart-alt-2'></i>
-              <p>Belum ada data nilai yang diinput.</p>
+              <p>Belum ada data nilai.</p>
               <small>Klik "Input Nilai" untuk menambahkan nilai siswa.</small>
             </div>
           </td>
@@ -217,7 +217,7 @@
             </a>
           </div>
           <p style="font-size:12px; color:#64748b; font-family:monospace; background:#fff; padding:8px 12px; border-radius:6px; border:1px solid #e2e8f0; margin-top:8px;">NISN, Nama Siswa, Nama Mata Pelajaran, Nilai</p>
-          <p style="font-size:11px; color:#64748b; margin-top:10px;"><i class='bx bx-error-circle' style="color:#f59e0b; vertical-align:middle; font-size:14px;"></i> Sangat disarankan menggunakan file template yang diunduh agar <b>NISN tidak salah ketik</b>.</p>
+          <p style="font-size:11px; color:#64748b; margin-top:10px;"><i class='bx bx-error-circle' style="color:#f59e0b; vertical-align:middle; font-size:14px;"></i> Gunakan file template agar NISN dan format data tidak salah.</p>
         </div>
       </div>
       <div class="modal-footer" style="border-top:1px solid #f1f5f9; padding:20px 24px; display:flex; justify-content:flex-end; gap:12px; background:#f8fafc; border-bottom-left-radius:16px; border-bottom-right-radius:16px;">
